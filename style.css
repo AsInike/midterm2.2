@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #cacaca;
+    font-size: 24px;
+    height: 100vh;
+    text-align: center;
+    font-weight: bold;
+    display: grid;
+    grid-template-areas: 'nav menu menu menu' 'nav section main aside';
+    grid-template-columns: 80px 400px auto 250px;
+    grid-template-rows: 80px auto;
+}
+
+nav {
+    background-color: #343a40;
+    color: white;
+    grid-area: nav;
+}
+
+menu {
+    background-color: #7048e8;
+    grid-area: menu;
+}
+
+section {
+    background-color: #e9ecef;
+    grid-area: section;
+    color: black;
+}
+
+main {
+    background-color: white;
+    grid-area: main;
+    color: black;
+    color: black;
+}
+
+aside {
+    background-color: #e9ecef;
+    grid-area: aside;
+    color: black;
+}
+
+button {
+    background-color: #5F3DC4;
+    color: white;
+    border: #7048e8;
+    padding: 10px;
+}
+
+.left {
+    display: flex;
+    margin-left: 40px;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.right {
+    display: flex;
+    background-color: #d6336c;
+    justify-content: flex-end;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    background-color: #adb5bd;
+    padding: 30px;
+    scrollbar-width: 100px;
+    scroll-behavior: smooth;
+}
